@@ -7,6 +7,12 @@ import {
 
 export default class StackTwoDetail extends React.Component {
   
+  componentWillMount() {
+    const navigationParams = this.props.navigation.state.params
+    const navigationProp = navigationParams.navigationProp
+    console.log('props ', navigationProp)
+  }
+
   render() {
     return (
       <View style={ styles.container }>

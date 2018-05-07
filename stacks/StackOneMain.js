@@ -19,7 +19,7 @@ export default class StackOneMain extends React.Component {
   }
 
   navigation = () => {
-    this.props.navigation.navigate('Detail')
+    this.props.navigation.navigate('Detail', { navigationProp: true })
   }
 
 }
